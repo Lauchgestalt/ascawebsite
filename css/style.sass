@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
     
 $color-dark: #232026
 $color-light: #FFFAFF
 $color-mid: #20A39E
 $font-size: 20px
-    
+
 html
     margin: 0
-    font-family: 'Roboto', sans-serif
+    font-family: 'Open Sans Condensed', sans-serif
     background: $color-dark
     color: $color-light
     font-size: $font-size
@@ -17,6 +18,13 @@ html
 
 p
     margin: 0
+
+a
+    color: $color-mid
+    text-decoration: none
+    margin-right: 5vw
+    &:hover
+        text-decoration: underline
 
 h5
     font-weight: 700 !important
@@ -91,9 +99,12 @@ h5
     justify-content: center
     align-items: center
     min-height: 25vh
+    margin: 25vh 0
 
 #headerContent
     text-align: center
+    h1, h3
+        text-shadow: 5px 5px 3px black
 
 #container
     width: 100%
